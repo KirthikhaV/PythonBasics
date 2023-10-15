@@ -1,0 +1,105 @@
+Task 1.1:
+-------
+
+1. = Operator (Assignment Operator):
+   - The = operator is the assignment operator in Python.
+   - It is used to assign a value to a variable. For example:  x = 10
+     
+
+     In this case, the value 10 is assigned to the variable x. It does not compare values; it assigns the value on the right to the variable on the left.
+
+   - It is also used for updating the value of a variable:     
+     x = 5  # Assigns 5 to x
+     x = x + 1  # Updates the value of x to 6     
+
+2. == Operator (Equality Operator):
+   - The == operator is the equality operator in Python.
+   - It is used to compare the values on the left and right sides and checks if they are equal.
+   - It returns True if the values are equal, and False otherwise.
+     
+     a = 5
+     b = 5
+     result = (a == b)  # result is True, as a and b have the same value
+     
+   - It can be used to compare values of different data types:     
+     x = 5
+     y = "5"
+     result = (x == y)  # result is False, as x and y have different types
+
+Task 1.2:
+--------
+In Python, the **  is the exponentiation operator. It is used to raise the left operand to the power of the right operand. 
+
+result = base ** exponent. Here base is the base value, and exponent is the exponent to which the base is raised. The result is the value of base raised to the power of exponent.
+
+Example:
+----------
+result = 2 ** 3  # 2 raised to the power of 3
+print(result)    # Output: 8
+
+In this example, 2 ** 3 calculates the value of 2 raised to the power of 3, which is 8.
+ 
+base = 3
+exponent = 4
+result = base ** exponent
+print(result)  # Output: 81
+
+Additionally, the ** operator can be used for calculating roots by using fractional exponents. 
+For example, to calculate the square root of a number, you can use an exponent of 0.5:
+ 
+number = 25
+square_root = number ** 0.5
+print(square_root)  # Output: 5.0
+      
+Task 1.3:
+---------
+In Python, the ^ operator is the bitwise XOR (exclusive OR) operator. 
+It performs a bitwise XOR operation between the individual bits of two integers. 
+The result is a new integer where each bit is set to 1 only if the corresponding bits in the operands are different; otherwise, it is set to 0.
+
+Example:
+a = 5   # Binary: 0b0101
+b = 3   # Binary: 0b0011
+
+result = a ^ b
+
+print(result)  # Output: 6  (Binary: 0b0110)
+
+In this example, the binary representation of a is 0101 and b is 0011. The XOR operation results in 0110, which is 6 in decimal.
+
+Common contexts for using the ^ operator include:
+
+1.Flipping Bits:
+   - The XOR operator can be used to flip individual bits. For example, to toggle a specific bit in an integer:
+     
+     x = 0b1101  # Binary: 1101
+
+     # Toggle the second bit
+     x = x ^ (1 << 1)  # Binary: 1001
+     
+
+2.Simple Encryption and Decryption:
+   - XOR is sometimes used in simple encryption algorithms. It can be used to encrypt and decrypt data with a shared key:
+     
+     # Simple XOR encryption
+     key = 0b1010
+     data = 0b1100
+
+     encrypted = data ^ key
+     decrypted = encrypted ^ key
+     
+
+3.Bitmasking:
+   - Bitmasking involves using bitwise operators to manipulate specific bits in a binary representation. XOR can be used in bitmasking operations.
+     
+     # Bitmasking example: Toggle the third bit
+     value = 0b1010
+
+     # Create a bitmask with only the third bit set
+     bitmask = 1 << 2
+
+     # Toggle the third bit
+     result = value ^ bitmask
+     
+Note: The ^ operator should not be confused with the ** operator, which is used for exponentiation, or the ^ symbol in logical expressions, which represents logical XOR. The context in which ^ is commonly used involves bitwise manipulation and operations.
+ 
